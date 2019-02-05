@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body {
+	margin-top: 2em; 
+	margin-right: 2em; 
+	margin-bottom: 3em; 
+	margin-left: 2em; 
+	padding-top: 5em;
+	padding-right: 5em;
+	padding-left: 5em;
+	
+	background-image:url("images/final tile 3.jpg");
+	background-size: 500px;
+	background-color: aliceblue;
+	margin-bottom: 3em;
+	
+	
+	
+}
+
+h1 {
+	font-family: 'Ovo', serif;
+	font-size: 300%;
+	letter-spacing: 10px;
+	line-height: 2px;
+	color: rosybrown;
+	margin-bottom:.85em;
+
+}
+
+h3 {
+	font-family: 'Muli', sans-serif;
+	color: lightslategrey;
+	
+	
+}
+
+p {
+font-family: 'Muli', sans-serif;
+	color: lightslategrey;
+	float:left;
+	
+}
+
+
+
+
+#content2 {
+	
+	float: left;
+	height: 30%;
+	padding-right: 3em;
+	padding-top: 1em;
+	
+}
+	
+	
+	
+	
+	
+	
+	
+#content1 {
+	background-color: #FDF2ED;
+	opacity: .9;
+	float: center;
+	padding: 2em;
+	padding-bottom: 6.5em;
+	padding-top: 1em;
+	
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+	
+}
+
+
+#content3 {
+	
+	
+	padding-right: 3em;
+}
+	
+	
+#content4 {
+	
+	float: right;
+	height: 30%;
+	padding-right: .5em;
+}	
+
+#content5 {
+	
+	margin-right: 7em;
+}
