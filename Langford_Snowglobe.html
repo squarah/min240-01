@@ -1,0 +1,769 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<style>
+	
+	
+	body {
+		overflow: hidden;
+		align-content: center;
+		margin: 20vw;
+		background-color: #FF6000;
+		padding-top: 5vh;
+	}
+	
+
+	#snowglobe{
+		
+		position: absolute;
+		top: 5%;
+		left:0;
+		bottom: 5%;
+		
+		
+		
+	}
+	.base{
+		
+		position: absolute;		
+ 		width: 18vw;
+ 		height: 5vw;
+		top: 39vw;
+		left: 40vw;
+ 		background: #CDC3B0;
+ 		transform: perspective(3px) rotateX(1deg);
+		border-radius: 0.5vw;
+		
+	}
+	
+	.globe {
+		
+		position:absolute;
+		top: 3vh;
+		left: 29vw;
+		width: 40vw;
+		height: 40vw;
+		background-color: #E0EDEC;
+		clip-path: circle();
+		
+	}
+	
+	
+	
+	.paddlestick1 {
+		
+		position: absolute;
+		width: 28vw;
+		height:1.2vw;
+		top: 13vw;
+		left: -1vw;
+		background: #CDC3B0;
+		transform: rotate(45deg);
+		border-radius: 10vw;
+		
+	}
+	
+	.paddlestick2 {
+		
+		position: absolute;
+		width: 28vw;
+		height:1.2vw;
+		top: 13vw;
+		left: 1vw;
+		background: #CDC3B0;
+		transform: rotate(135deg);
+		border-radius: 10vw;
+		
+	}
+	
+	.paddlehead2 {
+		
+		position: absolute;
+		width: 10vw;
+		height:4vw;
+		top: 2vw;
+		left: 19.5vw;
+		background: #CDC3B0;
+		transform: rotate(135deg);
+		border-radius: 10vw;
+		
+	}
+	
+	.paddlehead1 {
+		
+		position: absolute;
+		width: 10vw;
+		height:4vw;
+		top: 2.5vw;
+		left: -1vw;
+		background: #CDC3B0;
+		transform: rotate(45deg);
+		border-radius: 10vw;
+		
+	}
+	
+	.design1 {
+		
+		position: absolute;
+		width: 5.4vw;
+		height:1vw;
+		top: 3vw;
+		left: .2vw;
+		background: #AB2A02;
+		transform: skew(35deg) rotate(-13deg);
+		z-index: 1;	
+	
+    }
+	
+		.design2 {
+		
+		position: absolute;
+		width: 5.4vw;
+		height:1vw;
+		top: 5vw;
+		left: 2.2vw;
+		background: #AB2A02;
+		transform: skew(35deg) rotate(-13deg);
+		z-index: 1;
+	
+    }
+	
+	.design3 {
+		
+		position: absolute;
+		height: 5.3vw;
+		width:1vw;
+		top: 2.2vw;
+		left: 23vw;
+		background: #AB2A02;
+		transform: skew(-30deg) rotate(-75deg); 
+		z-index: 1;
+	
+    }
+	
+	.design4 {
+		
+		position: absolute;
+		height: 5.3vw;
+		width:1vw;
+		top: .2vw;
+		left: 25vw;
+		background: #AB2A02;
+		transform: skew(-30deg) rotate(-75deg); 
+		z-index: 1;
+		
+	
+    }
+	
+	#oar1{
+		
+		position: absolute;
+		width: 25vw;
+		height:23.8vw;
+		top: 11vw;
+		left: 34.8vw;
+		/*border: 5px solid black;*/
+		animation: tilt1 .5s ease-out;
+		animation-delay: .2s;
+		
+	}
+	
+	#oar2{
+		
+		position: absolute;
+		width: 25vw;
+		height:23.8vw;
+		top: 11vw;
+		left: 35.5vw;
+		/*border: 5px solid black;*/
+		animation: tilt2 .5s ease-out;
+		animation-delay: .2s;
+	}
+	
+	@keyframes tilt2 {
+    0%   {transform: rotateZ(0deg);}
+    25%  {transform: rotateZ(2deg);}
+    50%  {transform: rotateZ(-2deg);}
+    75%  {transform: rotateZ(2deg);}
+    100% {transform: rotateZ(-2deg);}
+}
+
+	#ipad {
+		position: absolute;
+		width: 7vw;
+		height:10.9vw;
+		top: 6vw;
+		left: 45.9vw;
+		/*border: 5px solid black;*/
+		animation: tilt1 .5s ease-out;
+		animation-delay: .2s;
+		
+	}
+	
+	
+	@keyframes tilt1 {
+    0%   {transform: rotateZ(0deg);}
+    25%  {transform: rotateZ(-2deg);}
+    50%  {transform: rotateZ(2deg);}
+    75%  {transform: rotateZ(-2deg);}
+    100% {transform: rotateZ(2deg);}
+}
+	
+
+	
+	
+	.frame {
+		
+		position: absolute;
+		width: 7vw;
+		height:10.9vw;
+		top: 0;
+		left: 0;
+		background: #FFFFFF;
+		border-radius: 1vw;
+		
+	}
+	
+	.screen {
+		
+		position: absolute;
+		width: 5.5vw;
+		height:8.5vw;
+		top: 1.1vw;
+		left: .75vw;
+		background: #383838;
+		border-radius: 1vw;
+		
+	}
+	
+	.button {
+		
+		position: absolute;
+		width: .6vw;
+		height:.6vw;
+		top: 10vw;
+		left: 3vw;
+		background: #B4B4B4;
+		border-radius: 5vw;
+		
+		
+	}
+	
+	.shine {
+		
+			
+		
+		position: absolute;
+		width: 4.2vw;
+		height:5vw;
+		top: 3vw;
+		left: 1.5vw;
+		background: #B4B4B4;
+		transform: skew(-40deg) rotate(-40deg);
+		z-index: 1;
+		opacity: .5;
+		
+	}
+	
+	
+	
+	.n1 {
+		
+		position: absolute;
+		height: 7.1vw;
+		width:1vw;
+		top: 3vw;
+		left: 3vw;
+		background: #AB2A02;
+		transform: skew(-19deg) rotate(-220deg); 
+		z-index: 1;
+		
+	
+    }
+	
+	.n2 {
+		
+		position: absolute;
+		height: 6.3vw;
+		width:1.15vw;
+		top: 3.4vw;
+		left: 1.5vw;
+		background: #D4260B;
+		transform: skew(0deg) rotate(0deg); 
+		z-index: 1;
+		
+	
+    }
+	
+	.n3 {
+		
+		position: absolute;
+		height: 6.3vw;
+		width:1.15vw;
+		top: 3.4vw;
+		left: 4.2vw;
+		background: #D4260B;
+		transform: skew(0deg) rotate(0deg); 
+		z-index: 1;
+		
+	
+    }
+	
+	#netflix {
+		
+		position: absolute;
+		width: 7vw;
+		height:10.9vw;
+		top: 28vw;
+		left: 44vw;
+		/*border: 5px solid black;*/
+		animation: tilt2 .5s ease-out;
+		animation-delay: .2s;
+		
+	}
+	
+	.body1 {
+		
+		position: absolute;
+		width: 3.5vw;
+		height:2.5vw;
+		top: 24.7vw;
+		left: 36.5vw;
+		background: #383838;
+		border-radius: 1vw;
+		
+	}
+	
+	.body2 {
+		
+		position: absolute;
+		width: 3.5vw;
+		height:2.5vw;
+		top: 24vw;
+		left: 35vw;
+		background: #383838;
+		border-radius: 1vw;
+		transform: rotate(45deg); 
+		
+	}
+	
+	.body3 {
+		
+		position: absolute;
+		width: 2.5vw;
+		height:1vw;
+		top: 24.5vw;
+		left: 39vw;
+		background: #383838;
+		border-radius: 1vw;
+		transform: rotate(-20deg); 
+		
+	}
+		
+	.fronttire {
+		
+		position: absolute;
+		width: 3vw;
+		height:3vw;
+		top: 25.3vw;
+		left: 40.2vw;
+		background: #383838;
+		border-radius: 100%;
+		transform: rotate(45deg);
+		
+		
+	}
+	
+	.frontwheel {
+		
+		position: absolute;
+		width: 1.6vw;
+		height:1.6vw;
+		top: 25.99vw;
+		left: 40.90vw;
+		background: #B4B4B4;
+		border-radius: 100%;
+		transform: rotate(45deg);
+		
+		
+	}
+	
+	.backtire {
+		
+		position: absolute;
+		width: 3vw;
+		height:3vw;
+		top: 25.3vw;
+		left: 32.5vw;
+		background: #383838;
+		border-radius: 100%;
+		transform: rotate(45deg);
+		
+		
+	}
+	
+	.backwheel {
+		
+		position: absolute;
+		width: 1.6vw;
+		height:1.6vw;
+		top: 25.99vw;
+		left: 33.17vw;
+		background: #B4B4B4;
+		border-radius: 100%;
+		transform: rotate(45deg);
+		
+		
+	}
+	
+	.axle {
+		
+		position: absolute;
+		width: 5vw;
+		height:.75vw;
+		top: 24.5vw;
+		left: 33.4vw;
+		background: #B4B4B4;
+		border-radius: 1vw;
+		transform: rotate(-45deg); 
+		
+	}
+	
+	.handlebar {
+		
+		position: absolute;
+		width: 2.4vw;
+		height:.75vw;
+		top: 23.1vw;
+		left: 37vw;
+		background: #B4B4B4;
+		border-radius: 1vw;
+		transform: rotate(0deg); 
+		
+	}
+	
+	.exhaust1 {
+		
+		position: absolute;
+		width: 2.4vw;
+		height:.75vw;
+		top: 27.6vw;
+		left: 37.7vw;
+		background: #B4B4B4;
+		border-radius: 1vw;
+		transform: rotate(0deg); 
+		
+	}
+	
+	.exhaust2 {
+		
+		position: absolute;
+		width: 2.4vw;
+		height:.75vw;
+		top: 26vw;
+		left: 37vw;
+		background: #B4B4B4;
+		border-radius: 1vw;
+		transform: rotate(0deg); 
+		
+	}
+	
+	#netflix {
+		
+		position: absolute;
+		width: 7vw;
+		height:10.9vw;
+		top: 28vw;
+		left: 46vw;
+		/*border: 5px solid black;*/
+		animation: tilt2 .5s ease-out;
+		
+		
+	}
+	.frontcover {
+		
+		position: absolute;
+		width: 5.5vw;
+		height:7.5vw;
+		top: 21.1vw;
+		left: 57.2vw;
+		background: #D4260B;
+		border-radius: 1vw;
+		transform: rotate(35deg);
+		
+	}
+	
+	.binding {
+		
+		position: absolute;
+		width: 3vw;
+		height:2.5vw;
+		top: 25.9vw;
+		left: 56vw;
+		background: #AB2A02;
+		border-radius: 1vw;
+		transform: rotate(0);
+		
+	}
+	
+	.backcover {
+		
+		position: absolute;
+		width: 5.8vw;
+		height:7.5vw;
+		top: 22.8vw;
+		left: 57.2vw;
+		background: #AB2A02;
+		border-radius: 1vw;
+		transform: rotate(35deg);
+		
+	}
+	
+	.pagesfront {
+		
+		position: absolute;
+		width: 4.5vw;
+		height:2vw;
+		top: 27.3vw;
+		left: 56.4vw;
+		background: #ffffff;
+		border-radius: 1vw;
+		transform: rotate(35deg);
+		
+	}
+	
+	.pagesright {
+		
+		position: absolute;
+		width: 4vw;
+		height:6.4vw;
+		top: 23.5vw;
+		left: 58.6vw;
+		background: #CDC3B0;
+		border-radius: 1vw;
+		transform:  rotate(35deg);
+		
+	}
+	
+	#oar1 {
+    	overflow: hidden;
+    	transition-duration: 0.8s;
+    	transition-property: transform;
+	}
+	
+
+</style>
+	
+	
+
+<body>
+	
+	
+<!-- WHOLE GLOBE -->
+	
+	<div id="snowglobe">
+	
+		<div class="base">
+	
+		</div>
+		
+		<div class="globe">
+	
+		</div>
+
+		
+	<!-- BACKGROUND -->
+		
+	<div id="background">
+		
+		<div class="hill1">
+		
+		
+		</div>
+		
+		<div class="hill2">
+		
+		
+		</div>
+		
+		
+		</div>
+	
+	
+<!-- LEFT OAR -->
+	
+	<div id="oar1">
+	
+		<div class="paddlestick1">
+	
+		</div>
+		
+		<div class="paddlehead1">
+	
+		</div>
+		
+		<div class="design1">
+	
+		</div>
+		
+		<div class="design2">
+	
+		</div>
+		
+	</div>	
+		
+	
+<!-- RIGHT OAR -->	
+	<div id="oar2">
+	
+		<div class="paddlestick2">
+	
+		</div>
+		
+		<div class="paddlehead2">
+	
+		</div>
+		
+		<div class="design3">
+	
+		</div>
+		
+		<div class="design4">
+	
+		</div>
+		
+		
+	</div>
+		
+		
+<!-- IPAD -->	
+		
+	<div id="ipad">
+		
+		<div class="frame">
+			
+		</div>
+		
+		<div class="screen">
+			
+		</div>
+		
+		<div class="button">
+		
+		</div>
+		
+		<div class="camera">
+		
+		</div>
+		
+		<div class="shine">
+		
+		</div>
+		
+		
+	</div>
+		
+		
+	<!-- NETFLIX -->
+		
+	<div id="netflix">
+		
+		<div class="n1">
+		
+		</div>
+		
+		<div class="n2">
+		
+		</div>
+		
+		<div class="n3">
+		
+		</div>
+		
+		
+	</div>
+		
+		
+	<!-- MOTORCYCLE -->
+		
+	<div id="bike">
+		
+		<div class="body1">
+		
+		</div>
+		
+		<div class="body2">
+		
+		</div>
+		
+		<div class="body3">
+		
+		</div>
+		
+		<div class="fronttire">
+		
+		</div>
+		
+		<div class="frontwheel">
+		
+		</div>
+		
+		<div class="backtire">
+		
+		</div>
+		
+		<div class="backwheel">
+		
+		</div>
+		
+		<div class="axle">
+		
+		</div>
+		
+		<div class="handlebar">
+		
+		</div>
+		
+		<div class="exhaust1">
+		
+		</div>
+		
+		<div class="exhaust2">
+		
+		</div>
+			
+	</div>
+		
+	<!-- BOOK -->
+		
+	<div id="book">
+	
+		
+		<div class="binding">
+		
+		</div>
+		
+		<div class="backcover">
+		
+		</div>
+		
+		<div class="pagesright">
+		
+		</div>
+		
+		<div class="pagesfront">
+	
+		</div>
+		
+		
+		<div class="frontcover">
+		
+		</div>
+		
+	</div>
+	
+</div>
+</body>
+</html>
