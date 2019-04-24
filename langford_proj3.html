@@ -1,0 +1,533 @@
+
+<!doctype html>
+
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches" rel="stylesheet">
+</head>
+<style>
+	
+	body{
+		
+		background-color: darkseagreen;
+		
+	}
+    #startScreen {
+        position: absolute;
+        top: 30vh;
+        left: 25vw;
+        width: 50vw;
+        height: 40vh;
+        background-color: lightyellow;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		color: saddlebrown;
+		
+		text-align: center;
+        
+    }
+	
+	span {
+	
+	line-height: .5em;
+	font-size: 4em;
+		
+	}
+
+	#workScreen {
+        position: absolute;
+        top: 20vh;
+        left: 32vw;
+        width: 35vw;
+        height: 90vh;
+        background-image: url(https://i.imgur.com/8t59xLI.jpg);
+		background-color: transparent;
+        display: none;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transform: scale(1.3);
+		overflow: hidden;
+		
+    }
+	
+	#backBTN {
+		
+		position: absolute;
+        top: 68%;
+        left: 40%;
+        width: 20%;
+        height: 5%;
+        background-color: saddlebrown;
+        cursor: pointer;
+        user-select: none;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		line-height: 1em;
+		color: white;
+		padding-top: 2vh;
+		padding-bottom: -5vh;
+		text-align: center;
+	}
+	
+	
+    
+    #gameScreen {
+        position: absolute;
+        top: 7vh;
+        left: 9vw;
+        width: 80vw;
+        height: 80vh;
+        background-color: saddlebrown;
+		border-radius: 1em;
+		border-style: groove;
+		border-width: 1em;
+		border-color: lightyellow;
+        display: none;
+		
+		
+    }
+	
+	#lines {
+		
+		position: absolute;
+        top: 7%;
+        left: 33%;
+        width: 35%;
+        height: 85%;
+        background-color: transparent;
+		border-left: .4em;
+		border-right: .4em;
+		border-style: dashed;
+		border-top-width: 0em;
+		border-bottom-width: 0em;
+		border-color: #462101;
+		
+	}
+    
+    #endScreen {
+        position: absolute;
+        top: 30vh;
+        left: 25vw;
+        width: 50vw;
+        height: 40vh;
+        background-color: lightyellow;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		color: saddlebrown;
+		text-align: center;
+		display: none;
+    }
+    
+    #startBTN {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+        background-color: saddlebrown;
+        cursor: pointer;
+        user-select: none;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		line-height: .7em;
+		color: white;
+		
+    }
+	
+	#showWorkBTN {
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        width: 20%;
+        height: 15%;
+        background-color: saddlebrown;
+        cursor: pointer;
+        user-select: none;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		line-height: 1em;
+		color: white;
+		padding-top: 1vh;
+		padding-bottom: -5vh;
+		
+    }
+	
+	
+    
+   
+    
+    #carrot {
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        width: 5%;
+        height: 20%;
+        
+        border-radius: 50%;
+		transform: scale(1);
+    }
+	
+	#carrotColor {
+		
+		position: absolute;
+        top: 40%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ADDB16;
+        border-radius: 50%;
+		
+	}
+	#carrotTop {
+		
+		position: absolute;
+        top: 0%;
+        left: 30%;
+        width: 40%;
+        height: 60%;
+        background-color: #81A21B;
+        border-radius: 50%;
+		
+	}
+	
+	#tomato {
+        position: absolute;
+        top: 35%;
+        left: 46.5%;
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+		transform: scale(1);
+    }
+	
+	
+	#tomatoColor {
+		
+		position: absolute;
+        top: 40%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ADDB16;
+        border-radius: 50%;
+		
+	}
+	#tomatoTop {
+		
+		position: absolute;
+        top: 20%;
+        left: 30%;
+        width: 40%;
+        height: 60%;
+        background-color: #81A21B;
+        border-radius: 50%;
+		
+	}
+	
+	#eggplant {
+        position: absolute;
+        top: 22%;
+        left: 80%;
+        width: 10%;
+        height: 30%;
+        border-radius: 2em;
+		transform: scale(.6);
+    }
+	
+	
+	#eggplantColor {
+		
+		position: absolute;
+        top: 40%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ADDB16;
+        border-radius: 2em;
+		
+	}
+	#eggplantTop {
+		
+		position: absolute;
+        top: 20%;
+        left: 30%;
+        width: 40%;
+        height: 60%;
+        background-color: #81A21B;
+        border-radius: 50%;
+		
+	}
+	
+	#quitBTN {
+        position: absolute;
+        top: -10%;
+        left: -2%;
+        width: 8%;
+        height: 4%;
+        background-color: saddlebrown;
+        cursor: pointer;
+        user-select: none;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		line-height: 1em;
+		color: white;
+		padding-top: 1vh;
+		padding-bottom: -5vh;
+		padding-left: 3vw;
+		
+    }
+	
+	#playAgainBTN {
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        width: 20%;
+        height: 15%;
+        background-color: saddlebrown;
+        cursor: pointer;
+        user-select: none;
+		border-radius: 1em;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: .05em;
+		line-height: 1em;
+		color: white;
+		padding-top: 1vh;
+		padding-bottom: -5vh;
+		
+    }
+	
+	p {
+		
+		line-height: 1em;
+	font-size: 4em;
+		
+	}
+	
+	
+</style>
+<body>
+	<div id="startScreen"> <span> <br> Veggie Garden</span>
+	<div id="startBTN"> <br> start </div>
+	<div id="showWorkBTN"> Show<br>Workflow </div>
+</div>
+<div id="workScreen">
+	
+	<div id="backBTN">  back </div>
+	
+	</div>
+<div id="gameScreen"> 
+	
+	<div id="lines">  </div>
+    
+    <div id="carrot">
+		<div id="carrotTop"></div>
+		<div id="carrotColor"></div>
+	
+	</div>
+	
+	<div id="tomato">
+		<div id="tomatoTop"></div>
+		<div id="tomatoColor"></div>
+	
+	</div>
+	
+	<div id="eggplant">
+		<div id="eggplantTop"></div>
+		<div id="eggplantColor"></div>
+	
+	</div>
+	
+    <div id="quitBTN">Quit</div>
+    
+    
+    </div>
+<div id="endScreen"> 
+	
+	<p>Thank you<br>for Playing!</p>
+	<div id="playAgainBTN"> play<br>again? </div>
+	
+	</div>
+
+<script>
+    var myStartScreen;
+    myStartScreen = document.querySelector("#startScreen");
+    
+    var myGameScreen;
+    myGameScreen = document.querySelector("#gameScreen");
+	
+	var myWorkScreen;
+    myWorkScreen = document.querySelector("#workScreen");
+	
+	var myEndScreen;
+	myEndScreen = document.querySelector("#endScreen");
+    
+    var myStartBTN;
+    myStartBTN = document.querySelector("#startBTN");
+	
+	var myShowWorkBTN;
+    myShowWorkBTN = document.querySelector("#showWorkBTN");
+	
+	var myBackBTN;
+    myBackBTN = document.querySelector("#backBTN");
+	
+	var myQuitBTN;
+	myQuitBTN = document.querySelector("#quitBTN");
+	
+	var myPlayAgainBTN;
+	myPlayAgainBTN = document.querySelector("#playAgainBTN");
+    
+    myStartBTN.style.fontSize = "3em";
+    myStartBTN.style.textAlign = "center";
+	
+	
+	
+    var myCarrot;
+    myCarrot = document.querySelector("#carrot");
+    
+	var myCarrotColor;
+    myCarrotColor = document.querySelector("#carrotColor");
+	
+    myCarrot.addEventListener("click", growCarrot, false);
+    
+   
+    
+    var myCarrotSize = 1;
+    
+    function growCarrot() {
+        myCarrotSize = myCarrotSize + .1;
+        myCarrot.style.transform = "scale("
+        +myCarrotSize+")";
+		
+		if (myCarrotSize > 1.2 && myCarrotSize < 1.8) {
+			
+			myCarrotColor.style.backgroundColor = "#FFE000";
+		}
+		
+	    if (myCarrotSize > 1.8) {
+			
+			myCarrotColor.style.backgroundColor = "#FF7F00";
+		}
+		 
+       
+    }
+	
+	
+	var myTomato;
+    myTomato = document.querySelector("#tomato");
+    
+	var myTomatoColor;
+    myTomatoColor = document.querySelector("#tomatoColor");
+	
+    myTomato.addEventListener("click", growTomato, false);
+    
+   
+    
+    var myTomatoSize = 1;
+    
+    function growTomato() {
+        myTomatoSize = myTomatoSize + .1;
+        myTomato.style.transform = "scale("
+        +myTomatoSize+")";
+		
+		if (myTomatoSize > 1.2 && myTomatoSize < 1.8) {
+			
+			myTomatoColor.style.backgroundColor = "#FFB000";
+		}
+		
+	    if (myTomatoSize > 1.8) {
+			
+			myTomatoColor.style.backgroundColor = "#ED5621";
+		}
+		 
+       
+    }
+	
+	
+	var myEggplant;
+    myEggplant = document.querySelector("#eggplant");
+    
+	var myEggplantColor;
+    myEggplantColor = document.querySelector("#eggplantColor");
+	
+    myEggplant.addEventListener("click", growEggplant, false);
+    
+   
+    
+    var myEggplantSize = .6;
+    
+    function growEggplant() {
+        myEggplantSize = myEggplantSize + .1;
+        myEggplant.style.transform = "scale("
+        +myEggplantSize+")";
+		
+		if (myEggplantSize > 1 && myEggplantSize < 1.3) {
+			
+			myEggplantColor.style.backgroundColor = "#F2F9B4";
+		}
+		
+	    if (myEggplantSize > 1.3) {
+			
+			myEggplantColor.style.backgroundColor = "#A15CB7";
+		}
+		 
+       
+    }
+	
+	
+    
+    myStartBTN.addEventListener("click", hideStartShowGame, false);
+    
+     
+    function hideStartShowGame() {
+        myStartScreen.style.display = "none";
+        myGameScreen.style.display = "block";
+    }
+    
+	myShowWorkBTN.addEventListener("click", showWork, false);
+    
+ 
+    function showWork() {
+        myStartScreen.style.display = "none";
+        myWorkScreen.style.display = "block";
+		
+	
+    }
+    
+    myBackBTN.addEventListener("click", goBack, false);
+    
+ 
+    function goBack() {
+        myWorkScreen.style.display = "none";
+        myStartScreen.style.display = "block";
+		
+	}
+	
+	myQuitBTN.addEventListener("click", quitGame, false);
+    
+ 
+    function quitGame() {
+        myGameScreen.style.display = "none";
+        myEndScreen.style.display = "block";
+		
+	}
+	
+	myPlayAgainBTN.addEventListener("click", playAgain, false);
+    
+ 
+    function playAgain() {
+        myEndScreen.style.display = "none";
+        myStartScreen.style.display = "block";
+		
+		
+	}
+    
+    
+</script>
+</body>
+</html>
