@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>T E J I D O</title>
+	
+<link rel="stylesheet" type="text/css" href="tejido.css">
+<link rel="stylesheet" href="https://use.typekit.net/rnz6oic.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200i,400,700,800" rel="stylesheet">
+</head>	
+
+
+
+<body>
+	
+	<div class= "loginScreen">
+		<div id= "loginLogo">
+		<img src="https://i.imgur.com/qf5kp8g.png" title="source: imgur.com" alt= "pic" />
+		</div>
+		
+		<div id= "uN">
+			<input type="text" id="username" value="username" height="8em" >
+			<br>
+		</div>
+		<div id= "pW">
+			<input type="text" id="password" value="password" height="8em" >
+			<br>
+		</div>
+		<div id= "loginButton">
+			
+   			<img src="https://i.imgur.com/jnK95rM.png" onclick="loginToConnect();" alt="login" />
+			</div>
+			<br>
+		</div>
+		
+		
+	
+	
+	<div class= "connectScreen">
+	
+	<div id="connectNav">
+		
+	<div class="navbar">
+	<img src="https://i.imgur.com/4jOQD2p.png"  alt="login" />
+	</div>	
+		<div class="icon1">
+		
+			<img src="https://i.imgur.com/HZXbBeZ.png" onclick="connectToProfile();"  alt="login" />
+		
+		</div>
+		<div class="icon2">
+		
+			<img src="https://i.imgur.com/HZXbBeZ.png"  alt="login" />
+		
+		</div>
+		
+	</div>
+		
+		
+	<div class= "profile1">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/P61QhSC.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>Jane Smith // Biology <br>
+Cincinnati, OH</h1>
+			
+			<p>I majored in biology at UC.  Looking for a new research partner!</p>
+			
+		</div>
+			
+			
+		
+		<div class= "footer">
+			<div class= "likes">
+			<img src="https://i.imgur.com/s7ng09p.png"  alt="login" />
+			</div>
+			<div class= "comments">
+			<img src="https://i.imgur.com/6gRHlVo.png"  alt="login" />
+			</div>
+			
+			</div>
+		
+			
+		</div>
+		
+	
+		
+	<div class= "profile2">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/RgInZxa.jpg"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>John Doe // English <br>
+Cincinnati, OH</h1>
+			
+			<p>Recently graduated English major! Anyone want to start going to poetry nights with me?</p>
+			
+		</div>
+		
+		<div class= "footer">
+		<div class= "likes">
+			<img src="https://i.imgur.com/YeoE7NT.png"  alt="login" />
+			</div>
+			
+			<div class= "comments">
+			<img src="https://i.imgur.com/pIVhxyw.png"  alt="login" />
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class= "profile3">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/2fFFJaG.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>Sarah Langford // Design <br>
+Cincinnati, OH</h1>
+			<p>I majored in Visual Communication Design at NKU! Looking for a group to go to design openings and gallery shows with!</p>
+			
+		</div>
+		
+		<div class= "footer">
+		<div class= "likes">
+			<img src="https://i.imgur.com/EVEJMHX.png"  alt="login" />
+			</div>
+			
+			<div class= "comments">
+			<img src="https://i.imgur.com/rM1bIFj.png"  alt="login" />
+			</div>
+			
+		</div>
+		
+	</div>
+		
+	</div>
+	
+	
+	<div class= "profileScreen">
+	
+	
+	fjldkj
+	
+	</div>
+	
+	<div class= "chatScreen">
+	
+	
+	
+	
+	</div>
+		
+	
+	
+	<script>
+    var myLoginScreen;
+    myLoginScreen = document.querySelector(".loginScreen");
+    
+    var myConnectScreen;
+    myConnectScreen = document.querySelector(".connectScreen");
+	
+	var myProfileScreen;
+    myProfileScreen = document.querySelector(".profileScreen");
+	
+	var myChatScreen;
+	myChatScreen = document.querySelector(".chatScreen");
+    
+    var myLoginButton;
+    myLoginButton = document.querySelector(".loginButton");
+	
+	var myProfileButton;
+	myProfileButton = document.querySelector(".icon1");
+		
+	myLoginButton.addEventListener("click", loginToConnect, false);
+	myProfileButton.addEventListener("click", connectToProfile, false);
+		
+	function loginToConnect() {
+        myLoginScreen.style.display = "none";
+        myConnectScreen.style.display = "flex";
+    }
+		
+	function connectToProfile() {
+        myConnectScreen.style.display = "none";
+        myProfileScreen.style.display = "flex";
+    }
+	
+	</script>
+	
+	
+</body>
+</html>
