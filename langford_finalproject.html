@@ -1,0 +1,1302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>T E J I D O</title>
+	
+
+<link rel="stylesheet" href="https://use.typekit.net/rnz6oic.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200i,400,700,800" rel="stylesheet">
+</head>	
+
+<style>
+
+	body {
+	
+	margin: -10px;
+	margin-top: -50px;
+	overflow-x: hidden;
+}
+
+::placeholder { 
+  color: #E828C4;
+	
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 15px;
+    border-width: 0;
+    border-style: none;
+	border-radius: 3em;
+	width: 35vh;
+	
+	
+   
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: #E828C4;
+    letter-spacing: 2px;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 5px;
+    text-shadow: none;
+    
+    text-align: start;
+    margin: 0em;
+    font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+}
+
+
+.loginScreen {
+	
+	background-image: url("https://i.imgur.com/MbMx2hy.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow:column wrap; 
+	justify-content: center;
+	margin-top: -5em;
+	overflow: hidden;
+	padding-top: 12vh;
+	
+}
+
+::placeholder { 
+  color: #E828C4;
+	
+	
+}
+
+
+#loginLogo {
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+#loginLogo img {
+	
+	display: flex;
+	align-self: center;
+	width: 38vh;
+	margin-top: 25vh;
+	animation: fadeInDown;
+	animation-duration: 1s;
+	margin-bottom: 6em;
+	
+
+
+	
+}
+	
+	
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+	
+	@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+
+#uN {
+	margin-top: -9vh;
+	display: flex; 
+	justify-content: center;
+	animation: fadeInDown;
+	animation-delay: .1;
+	animation-duration: 1s;
+	
+}
+
+#pW {
+	margin-top: 3vh;
+	display: flex; 
+	justify-content: center;
+	margin-bottom: 1em;
+	animation: fadeInDown;
+	animation-delay: .2s;
+	animation-duration: 1s;
+	
+}
+
+#loginButton {
+	
+	margin-top: 3vh;
+	display: flex; 
+	align-self: center;
+	margin-bottom: 24.6vh;
+	animation: fadeInDown;
+	animation-delay: .1s;
+	animation-duration: 1s;
+}
+
+#loginButton img {
+	
+	align-self:center;
+	width: 8em;
+	cursor: pointer;
+	 -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+#loginButton:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+	
+	
+
+	
+.connectScreen {
+	margin-top:2.5em;
+	display: none;
+	flex-flow:column wrap;
+	
+	
+}
+
+	
+@media screen and (max-width: 750px) {
+
+	
+	.connectNav {
+	
+	display:flex;
+	align-self: center;
+	z-index: 1;
+	
+	
+	
+}
+.navbar{
+	
+	margin-top: -10vw;
+	position: fixed;
+	margin-left: -20vw;
+	
+}
+	
+.desktopNavbar{
+		
+	display: none;	
+		
+	}
+	
+.navbar img {
+	margin-top: 10vw;
+	display: flex;
+	align-self: center;
+	width: 106vw;
+	    margin-left: 10vw;
+	position: fixed;
+}
+
+	
+	}
+.icon1 {
+	
+	float: left;
+	margin-top: 8vw;
+	margin-left: -28vw;
+
+	
+}
+
+
+.icon1 img {
+	position: fixed;
+	display: block;
+	width: 4vw;
+	  margin-left: 3vw;
+	
+	
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+.icon1:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icon2 {
+	
+	float: left;
+	    margin-left: 60vw;
+	margin-top: 8vw;
+	
+	
+	
+	
+}
+
+
+.icon2 img {
+	position: fixed;
+	display: block;
+	width: 5.2vw;
+	    margin-left: -4.5vw;
+	
+	
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+.icon2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icons{
+	    margin-left: 24vw;
+	
+	
+	
+}
+	
+
+
+
+.profile1 {
+	margin-top: 1.8em;
+	display: flex;
+	align-self: center;
+	margin-bottom: -2em;
+	
+	
+	
+}
+
+.profile1 h1{
+	
+	font-family: 'Nunito', sans-serif;
+	color: #22C46F;
+	font-size: 1.1em;
+	
+	
+}
+	
+ .profileScreen .profile1 h1{
+	
+	font-family: 'Nunito', sans-serif;
+	color: #FFA82A;
+	font-size: 1.1em;
+	     align-self: center;
+    justify-content: center;
+    margin-left: -10vw;
+    display: flex;
+	
+	
+}
+	.profileScreen .profile1 h2{
+	
+	font-family: 'Nunito', sans-serif;
+	color: #FFA82A;
+	font-size: 1.5;
+	font-weight: 900;
+	letter-spacing: .2em;
+	margin-bottom: -2vw;
+	align-self: center;
+    justify-content: center;
+    margin-left: -10vw;
+	    display: flex;
+	
+}
+
+.profile2 h1{
+	
+	font-family: 'Nunito', sans-serif;
+	color: #FFA82A;
+	font-size: 1.1em;
+	
+	
+}
+
+.profile3 h1{
+	
+	font-family: 'Nunito', sans-serif;
+	color: #FF2CD7;
+	font-size: 1.1em;
+	
+	
+}
+
+p {
+	
+	font-family: 'Nunito', sans-serif; 
+	font-weight: 200;
+	font-size: 14px;
+	color: #BEC0C4;
+	margin-left: -19vw;
+	margin-top: 5vw;
+	line-height: 1.8em;
+}
+
+.content {
+	
+	position: absolute;
+	display: block;
+	width: 50vw;
+	margin-left: 37vw;
+	margin-top: 52vw;
+	
+}
+	
+.profileScreen .content {
+	
+	position: absolute;
+	display: block;
+	width: 50vw;
+	margin-left: 32.4vw;
+	margin-top: 58vw;
+	
+}
+
+
+.profile1 .background {
+	z-index: 0;
+	
+	
+	
+}
+
+
+
+.profile2 {
+	margin-top: -1.2em;
+	display: flex;
+	align-self: center;
+	margin-bottom: .2em;
+	
+	
+}
+
+
+
+.profile3 {
+	margin-top: -3em;
+	display: flex;
+	align-self: center;
+	margin-bottom: -2em;
+	
+	
+}
+
+.profile3 .background {
+	
+	z-index: -3
+}
+
+.footer {
+	
+	display:flex;
+	align-self: center;
+	margin-top: 5vw;
+	
+	
+}
+
+
+
+.likes {
+	
+	float: left;
+	margin-top: 50vh;
+	margin-left: -86vw;
+	
+}
+
+
+.likes img {
+	position: absolute;
+	display: block;
+	width: 3em;
+	 max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+.likes:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.comments {
+	
+	float: left;
+	margin-top: 50vh;
+	margin-left: 60vw;
+	
+}
+
+
+.comments img {
+	position: absolute;
+	display: block;
+	width: 1.8em;
+	-moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	
+}
+
+.comments:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.background {
+	
+	display: flex;
+	align-self: center;
+	
+}
+
+.background img {
+	
+	display: flex;
+	align-self: center;
+	width: 100%;
+	
+}
+	
+.profileScreen	.background img {
+	
+	display: flex;
+	align-self: center;
+	width: 100%;
+	margin-top: -10vw;
+	
+}
+
+.profileScreen {
+	margin-top:2.5em;
+	display: none;
+	flex-flow:column wrap;
+	
+	
+}
+	
+.profileScreen img {
+	
+	
+	
+	
+}	
+
+	.profileScreen .icon2{
+		
+		opacity: 0;
+		
+		
+	}
+	
+	.chatScreen .icon2{
+		
+		opacity: 0;
+	}
+	
+	.profileScreen p {
+		
+		width: 65vw;
+		margin-left: -13vw;
+	}
+	
+	.profileScreen h3 {
+		
+		font-family: 'Nunito', sans-serif;
+	color: #FFA82A;
+	font-size: .9em;
+	 margin-left: -13vw;
+		margin-bottom: -4vw;
+		margin-top: 7vw;
+	}
+	
+
+.chatScreen {
+	
+	display: none;
+	margin-top:2.5em;
+	
+	flex-flow:column wrap;
+	
+	
+}
+	
+	.desktopContent {
+		
+		display: none;
+		
+	}
+	
+	.profilePic {
+		
+		display: none;
+		
+	}
+	
+	.interests{
+		
+		margin-top: -1em
+		
+	}
+	
+	.interests h3 {
+		
+		margin-top: 6.5vw;
+		
+		
+	}
+	
+	.interests img {
+		
+		width: 40vw;
+		margin-left: -13vw;
+		margin-top: 5vw;
+		
+		
+	}
+	
+	.chatContent {
+		
+		display: block;
+		
+	}
+	
+	.chatContent img{
+		
+		
+		width: 100%;
+		margin-top: 2.5em;
+		
+	}
+	
+	.chatDesktopContent {
+		
+		display: none;
+		
+	}
+	
+	
+@media screen and (min-width: 750px) {
+	
+	
+	.loginScreen{
+		
+		background-image: url(https://i.imgur.com/Gt6XF0E.png);
+		background-position:left;
+		
+		
+		
+	}
+		.desktopNavbar{
+		
+			display: flex;
+			position: fixed;
+			align-self: center;
+			justify-content: center;
+			z-index: 10;
+			padding-top: .5vw;
+		
+		}
+	
+	.desktopNavbar img{
+		
+			display: flex;
+		margin-top: 0em;
+			height: 8vw;
+		align-self: center;
+		justify-content: center;
+		margin-left: -23vw;
+		
+			
+		
+		}
+	.icons{
+		display:flex;
+		z-index: 11;
+		margin-top: -4vw;
+		
+	}
+	
+	.icon1{
+		
+		z-index: 15;
+		margin-top: 7.2vw;
+		margin-left: -21vw;
+	}
+	
+	.icon2{
+		
+		z-index: 15;
+		margin-left: 94vw;
+		margin-top: 7vw;
+		
+	}
+	
+	.icon1 img{
+		
+		width: 2.3vw;
+	}
+	
+	.icon2 img{
+		
+		width: 3vw;
+		
+	}
+	
+		.navbar{
+			
+		
+			display: none;
+				
+	}
+	
+	.background{
+		
+		float: left;
+		
+	}
+	.background img{
+		
+		width: 50%;
+		
+	}
+	
+	.content{
+		
+		display: inline-block;
+	}
+	
+	.profile1{
+		
+	    margin-top: 1.8em;
+    display: flex;
+    align-self: center;
+    margin-bottom: -2em;
+    margin-left: -48vw;
+    width: 100%;
+	}
+	
+	
+	.profile2{
+		
+		float: right;
+		
+	    margin-left: 50vw;
+    width: 100%;
+    margin-top: -51.9vw;
+	}
+	
+	.profile3{
+		
+	width: 100%;
+    margin-left: 1vw;
+	align-self: flex-start;
+			
+	}
+	
+	.content{
+		
+		    margin-left: 18vw;
+    margin-top: 26vw;
+		width: 23vw;
+		
+	}
+	
+	p {
+		
+		    margin-left: -9vw;
+		margin-top:2vw;
+		
+	}
+	
+	h1{
+		
+		width: 50vw;
+		
+	}
+	
+	.likes {
+		
+		margin-left: -94vw;
+		
+	}
+	
+	.comments {
+		
+		margin-left: 32vw;
+		
+	}
+	
+	.footer {
+		
+		margin-top: -1vw;
+		
+	}
+	
+	.profileScreen .background img{
+		
+		max-width: 60%;
+		display: flex;
+		
+	}
+	
+	.desktopContent{
+		
+		display:block;
+		float:right;
+		
+	}
+	
+	.profilePic{
+		
+		display:block;
+		float:right;
+		
+	}
+	
+	
+	.desktopContent img{
+		
+		    width: 75vh;
+    margin-left: 72vw;
+    margin-top: 4%;
+		
+	}
+	
+	
+	.profilePic img{
+		
+	    width: 59vh;
+    margin-left: -54em;
+    margin-top: 6em;
+		
+	}
+	
+
+	
+	 .profileScreen .profile1 h1{
+	
+	font-family: 'Nunito', sans-serif;
+    color: #FFA82A;
+    font-size: 1.1em;
+    align-self: center;
+    justify-content: center;
+    margin-left: 0;
+    display: flex;
+    margin-top: 2vw;
+	
+	
+}
+	.profileScreen .profile1 h2{
+	
+	font-family: 'Nunito', sans-serif;
+    color: #FFA82A;
+    font-size: 1.5;
+    font-weight: 900;
+    letter-spacing: .2em;
+    margin-bottom: -2vw;
+    align-self: center;
+    justify-content: center;
+    margin-left: 0vw;
+    display: flex;
+    width: 30vw;
+	
+}
+	
+	.profileScreen .content{
+		
+		
+	    margin-top: 7em;
+    margin-left: 80vw;
+    margin-right: -12vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20em;
+    position: absolute;
+	}
+	
+	.profileScreen .content p{
+		
+	    width: 22em;
+    margin-left: 0em;
+    margin-top: 4vw;
+	}
+	
+	.profileScreen .content h3{
+		
+		    
+	margin-left: -20em;
+    margin-top: 2em;
+	  
+	}
+	
+	.profileScreen .profile1 .background {
+		
+		display: none;
+		
+	}
+	
+	.interests{
+		
+		margin-top: -1em
+		
+	}
+	
+	.profileScreen .interests h3 {
+		
+		    margin-top: 6.5vw;
+    margin-left: -3.3em;
+		
+		
+	}
+	
+	.interests img {
+		
+	    width: 16em;
+    margin-left: -6vw;
+    margin-top: 5vw;
+		
+		
+	}
+	
+	.chatContent {
+		
+		display:none;
+	}
+	
+	.chatDesktopContent {
+		
+		display:inline-block;
+		margin-left: 2em;
+		margin-top: 2.6em;
+	}
+	
+	.chatDesktopContent img{
+		
+		width: 48%;
+
+	}
+	
+	.row2 img {
+		
+		margin-top: -2.8em;
+		
+	}
+	
+	
+	}
+	
+	
+	
+	
+		
+	
+	</style>
+
+<body>
+	
+	<div class= "loginScreen">
+		
+		<div id= "loginLogo">
+		<img src="https://i.imgur.com/ZwPf9nM.png" title="source: imgur.com" alt= "pic" />
+		</div>
+		
+		<div id= "uN">
+			<input type="text" id="username" value="username" height="8em" >
+			<br>
+		</div>
+		<div id= "pW">
+			<input type="text" id="password" value="password" height="8em" >
+			<br>
+		</div>
+		<div id= "loginButton">
+			
+   			<img src="https://i.imgur.com/jnK95rM.png" onclick="loginToConnect();" alt="login" />
+			</div>
+			<br>
+		</div>
+		
+		
+	
+	
+	<div class= "connectScreen">
+	
+	<div class="connectNav">
+		
+	<div class="navbar">
+	<img src="https://i.imgur.com/4jOQD2p.png"  alt="login" />
+	</div>	
+		
+	<div class="desktopNavbar">
+		
+		<img src="https://i.imgur.com/OA4xWWy.png"  alt="login" />
+		
+		</div>
+	<div class="icons">	
+		
+		<div class="icon1">
+		
+			<img src="https://i.imgur.com/HZXbBeZ.png" onclick="connectToProfile();"  alt="login" />
+		
+		</div>
+		<div class="icon2">
+		
+			<img src="https://i.imgur.com/mrT167V.png" onclick="connectToChat();" alt="login" />
+		
+		</div>
+		</div>
+		
+	</div>
+		
+		
+	<div class= "profile1">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/P61QhSC.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>Jane Smith // Biology <br>
+Cincinnati, OH</h1>
+			
+			<p>I majored in biology at UC.  Looking for a new research partner!</p>
+			
+		</div>
+			
+			
+		
+		<div class= "footer">
+			<div class= "likes">
+			<img src="https://i.imgur.com/s7ng09p.png"  alt="login" />
+			</div>
+			<div class= "comments">
+			<img src="https://i.imgur.com/6gRHlVo.png"  alt="login" />
+			</div>
+			
+			</div>
+		
+			
+		</div>
+		
+	
+		
+	<div class= "profile2">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/RgInZxa.jpg"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>John Doe // English <br>
+Cincinnati, OH</h1>
+			
+			<p>Recently graduated English major! Anyone want to start going to poetry nights with me?</p>
+			
+		</div>
+		
+		<div class= "footer">
+		<div class= "likes">
+			<img src="https://i.imgur.com/YeoE7NT.png"  alt="login" />
+			</div>
+			
+			<div class= "comments">
+			<img src="https://i.imgur.com/pIVhxyw.png"  alt="login" />
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class= "profile3">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/2fFFJaG.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h1>Sarah Langford // Design <br>
+Cincinnati, OH</h1>
+			<p>I majored in Visual Communication Design at NKU! Looking for a group to go to design openings and gallery shows with!</p>
+			
+		</div>
+		
+		<div class= "footer">
+		<div class= "likes">
+			<img src="https://i.imgur.com/EVEJMHX.png"  alt="login" />
+			</div>
+			
+			<div class= "comments">
+			<img src="https://i.imgur.com/rM1bIFj.png"  alt="login" />
+			</div>
+			
+		</div>
+		
+	</div>
+		
+	</div>
+	
+	
+	
+	
+	<div class= "profileScreen">
+	
+	
+		
+		
+		<div class="connectNav">
+		
+	<div class="navbar">
+	<img src="https://i.imgur.com/wIhwNi6.png"  alt="login" />
+	</div>	
+		
+	<div class="desktopNavbar">
+		
+		<img src="https://i.imgur.com/KRBdIOj.png"  alt="login" />
+		
+		</div>
+	<div class="icons">	
+		
+		<div class="icon1">
+		
+			<img src="https://i.imgur.com/KoywbYs.png" onclick="profileToConnect();"  alt="login" />
+		
+		</div>
+		<div class="icon2">
+		
+			<img src="https://i.imgur.com/mrT167V.png"  alt="login" />
+		
+		</div>
+		</div>
+		
+	</div>
+		
+		<div class= "profile1">
+		
+		<div class="background">
+			
+		<img src="https://i.imgur.com/heAKUou.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "content">
+			
+			<h2>John Smith</h2>
+		<h1>English // Cincinnati, OH</h1>
+			<h3>Bio</h3>
+			<p>Recently graduated English major! Anyone want to start going to poetry nights with me?</p>
+			
+			<div class= "interests">
+			<h3>Other Interests</h3>
+			<img src="https://i.imgur.com/5DoGRjJ.png" alt="interests">
+			</div>
+		</div>
+			
+		<div class="desktopContent">
+			
+		<img src="https://i.imgur.com/51oRPIS.png"  alt="login" />
+		
+		
+		</div>
+		
+			
+		<div class= "profilePic">
+		<img src="https://i.imgur.com/qsPt3tU.png"  alt="login" />
+		</div>		
+			
+		
+		
+			
+			</div>
+		
+		</div>
+	
+	
+	
+	<div class= "chatScreen">
+	
+	<div class="connectNav">
+		
+	<div class="navbar">
+	<img src="https://i.imgur.com/b7TVJg4.png"  alt="login" />
+	</div>	
+		
+	<div class="desktopNavbar">
+		
+		<img src="https://i.imgur.com/MDzvd6J.png"  alt="login" />
+		
+		</div>
+	<div class="icons">	
+		
+		<div class="icon1">
+		
+			<img src="https://i.imgur.com/KoywbYs.png" onclick="profileToConnect();"  alt="login" />
+		
+		</div>
+		<div class="icon2">
+		
+			<img src="https://i.imgur.com/mrT167V.png"  alt="login" />
+		
+		</div>
+		</div>
+		
+	</div>
+		
+		<div class= "chatContent">
+		
+		<img src="https://i.imgur.com/6H4GjxC.png"  alt="login" />
+		
+		</div>
+		
+		<div class= "chatDesktopContent">
+		
+		<img src="https://i.imgur.com/kR7SKa3.png"  alt="login" />
+		<img src="https://i.imgur.com/Qz1I6DT.png"  alt="login" />
+			<div class="row2">
+		<img src="https://i.imgur.com/kR7SKa3.png"  alt="login" />
+		<img src="https://i.imgur.com/Qz1I6DT.png"  alt="login" />
+		</div>
+		
+		</div>
+		
+	
+	
+	</div>
+		
+	
+	
+	<script>
+    var myLoginScreen;
+    myLoginScreen = document.querySelector(".loginScreen");
+    
+    var myConnectScreen;
+    myConnectScreen = document.querySelector(".connectScreen");
+	
+	var myProfileScreen;
+    myProfileScreen = document.querySelector(".profileScreen");
+	
+	var myChatScreen;
+	myChatScreen = document.querySelector(".chatScreen");
+    
+    var myLoginButton;
+    myLoginButton = document.querySelector(".loginButton");
+	
+	var myProfileButton;
+	myProfileButton = document.querySelector(".icon1");
+	
+	var myBackButton;
+	myBackButton = document.querySelector(".icon1")
+	
+	var myChatButton;
+	myChatButton = document.querySelector(".icon2")
+		
+	var myBackButton2;
+	myBackButton2 = document.querySelector(".icon1")
+		
+	myLoginButton.addEventListener("click", loginToConnect, false);
+	myProfileButton.addEventListener("click", connectToProfile, false);
+	myBackButton.addEventListener("click", profileToConnect, false);
+	myChatButton.addEventListener("click", connectToChat, false);
+	myBackButton2.addEventListener("click", chatToConnect, false);	
+		
+	function loginToConnect() {
+        myLoginScreen.style.display = "none";
+        myConnectScreen.style.display = "flex";
+    }
+		
+	function connectToProfile() {
+        myConnectScreen.style.display = "none";
+        myProfileScreen.style.display = "flex";
+    }
+		
+	function connectToChat() {
+        myConnectScreen.style.display = "none";
+        myChatScreen.style.display = "flex";
+    }
+	
+	function chatToConnect() {
+        myChatScreen.style.display = "none";
+        myConnectScreen.style.display = "flex";
+    }
+		
+	function profileToConnect() {
+		myProfileScreen.style.display = "none";
+        myConnectScreen.style.display = "flex";
+        
+    }
+	
+	</script>
+	
+	
+</body>
+</html>
