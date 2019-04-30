@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="images/tabicon.png">
 <title>T E J I D O</title>
 	
 
@@ -246,14 +247,6 @@ input, textarea, select, button {
 	
 }
 
-	.icon3 {
-	
-	float: left;
-	margin-top: 8vw;
-	margin-left: -28vw;
-
-	
-}
 
 .icon1 img {
 	position: fixed;
@@ -268,28 +261,8 @@ input, textarea, select, button {
   transition: all 0.3s;
 	
 }
-	
-	.icon3 img {
-	position: fixed;
-	display: block;
-	width: 4vw;
-	  margin-left: 3vw;
-	
-	
-  
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-	
-}
 
 .icon1:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-	
-	.icon3:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -622,7 +595,7 @@ p {
 	
 	.interests{
 		
-		margin-top: -1em
+		    margin-top: -.7em;
 		
 	}
 	
@@ -665,11 +638,6 @@ p {
 	
 @media screen and (min-width: 750px) {
 	
-	
-	.chatScreen {
-		
-		display: none;
-	}
 	
 	.loginScreen{
 		
@@ -716,13 +684,6 @@ p {
 		margin-left: -21vw;
 	}
 	
-	.icon3{
-		
-		z-index: 15;
-		margin-top: 7.2vw;
-		margin-left: -21vw;
-	}
-	
 	.icon2{
 		
 		z-index: 15;
@@ -732,11 +693,6 @@ p {
 	}
 	
 	.icon1 img{
-		
-		width: 2.3vw;
-	}
-	
-	.icon3 img{
 		
 		width: 2.3vw;
 	}
@@ -990,12 +946,6 @@ p {
 		
 	}
 	
-	.chatScreen{
-		
-		display:none;
-		
-	}
-	
 	
 	}
 	
@@ -1015,11 +965,11 @@ p {
 		</div>
 		
 		<div id= "uN">
-			<input type="text" id="username" value="username" height="8em" >
+			<input type="text" id="username" placeholder="username" height="8em" >
 			<br>
 		</div>
 		<div id= "pW">
-			<input type="text" id="password" value="password" height="8em" >
+			<input type="text" id="password" placeholder="password" height="8em" >
 			<br>
 		</div>
 		<div id= "loginButton">
@@ -1086,7 +1036,7 @@ Cincinnati, OH</h1>
 			<img src="https://i.imgur.com/s7ng09p.png"  alt="login" />
 			</div>
 			<div class= "comments">
-			<img src="https://i.imgur.com/6gRHlVo.png"  alt="login" />
+			<img src="https://i.imgur.com/6gRHlVo.png" onclick="connectToChat();" alt="login" />
 			</div>
 			
 			</div>
@@ -1119,7 +1069,7 @@ Cincinnati, OH</h1>
 			</div>
 			
 			<div class= "comments">
-			<img src="https://i.imgur.com/pIVhxyw.png"  alt="login" />
+			<img src="https://i.imgur.com/pIVhxyw.png" onclick="connectToChat();" alt="login" />
 			</div>
 			
 		</div>
@@ -1148,7 +1098,7 @@ Cincinnati, OH</h1>
 			</div>
 			
 			<div class= "comments">
-			<img src="https://i.imgur.com/rM1bIFj.png"  alt="login" />
+			<img src="https://i.imgur.com/rM1bIFj.png" onclick="connectToChat();" alt="login" />
 			</div>
 			
 		</div>
@@ -1196,7 +1146,7 @@ Cincinnati, OH</h1>
 		
 		<div class="background">
 			
-		<img src="https://i.imgur.com/heAKUou.png"  alt="login" />
+		<img src="https://i.imgur.com/Jsy0Wp6.png"  alt="login" />
 		
 		</div>
 		
@@ -1249,13 +1199,11 @@ Cincinnati, OH</h1>
 		</div>
 	<div class="icons">	
 		
-		<div class="icon3">
+		<div class="icon1">
 		
-			<img src="https://i.imgur.com/KoywbYs.png" onclick="chatToConnect();"  alt="login" />
+			<img src="https://i.imgur.com/KoywbYs.png" onclick="profileToConnect();"  alt="login" />
 		
 		</div>
-		
-		
 		<div class="icon2">
 		
 			<img src="https://i.imgur.com/mrT167V.png"  alt="login" />
@@ -1314,12 +1262,16 @@ Cincinnati, OH</h1>
 	myChatButton = document.querySelector(".icon2")
 		
 	var myBackButton2;
-	myBackButton2 = document.querySelector(".icon3")
+	myBackButton2 = document.querySelector(".icon1")
+		
+	var myMessageButton;
+	myBackButton2 = document.querySelector(".comments")
 		
 	myLoginButton.addEventListener("click", loginToConnect, false);
 	myProfileButton.addEventListener("click", connectToProfile, false);
 	myBackButton.addEventListener("click", profileToConnect, false);
 	myChatButton.addEventListener("click", connectToChat, false);
+	myMessageButton.addEventListener("click", connectToChat, false);
 	myBackButton2.addEventListener("click", chatToConnect, false);	
 		
 	function loginToConnect() {
